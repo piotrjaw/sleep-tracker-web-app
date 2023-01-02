@@ -33,7 +33,7 @@ const InputSleep = () => {
             <label>How many hours did you sleep?</label>
             <input
               type="text"
-              className="form-control mt-1"
+              className="form-control mt-1 "
               value={time}
               placeholder="hours"
               onChange={(e) => setTime(e.target.value)}
