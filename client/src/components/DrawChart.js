@@ -61,7 +61,7 @@ const DrawChart = ({ sleeps }) => {
         label: "Duration",
         data: sleeps.map((x) => x.time),
         borderColor: "rgb(0, 0, 0)",
-        backgroundColor: "rgba(90, 31, 153, 0.8)",
+        backgroundColor: "rgba(0, 153, 76, 0.8)",
         borderRadius: 10,
       },
     ],
