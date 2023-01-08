@@ -36,10 +36,13 @@ app.use(passport.session());
 
 app.use(express.json());
 
-app.use("/", indexRouter);
-app.use("/users", usersRouter);
-app.use("/sleeps", sleepsRouter);
-app.use("/auth", authRouter);
+app.use(express.static("../client/build"));
+app.use("/static", express.static("../client/build"));
+
+app.use("/api", indexRouter);
+app.use("/api/users", usersRouter);
+app.use("/api/sleeps", sleepsRouter);
+app.use("/api/auth", authRouter);
 
 // app.get("/", (req, res) => {
 //   res.send("hello earthling!");

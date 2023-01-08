@@ -8,7 +8,7 @@ const Context = ({ children }) => {
   }));
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_SERVER_URL}/account`, {
+    fetch("/api/account", {
       credentials: "include",
     })
       .then((r) => r.json())

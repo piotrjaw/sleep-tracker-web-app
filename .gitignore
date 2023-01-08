@@ -1,6 +1,7 @@
 
 
 **/client/*.env
+**/client/build/
 **/server/*.env
 
 

@@ -11,7 +11,7 @@ const ListSleep = () => {
 
   const deleteSleep = async (id) => {
     try {
-      const deleteSleep = await fetch(`http://localhost:5000/sleeps/${id}`, {
+      const deleteSleep = await fetch(`/api/sleeps/${id}`, {
         method: "DELETE",
       });
       setSleeps(sleeps.filter((sleep) => sleep.sleep_id !== id));
@@ -23,7 +23,7 @@ const ListSleep = () => {
   const getSleeps = async () => {
     try {
       const user_id = user.id;
-      const response = await fetch(`http://localhost:5000/sleeps/${user_id}`);
+      const response = await fetch(`/api/sleeps/${user_id}`);
       const jsonData = await response.json();
 
       setSleeps(jsonData);

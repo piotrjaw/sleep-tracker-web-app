@@ -9,7 +9,7 @@ const EditSleep = ({ sleep }) => {
     try {
       const body = { time };
       const response = await fetch(
-        `http://localhost:5000/sleeps/${sleep.sleep_id}`,
+        `/api/sleeps/${sleep.sleep_id}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
