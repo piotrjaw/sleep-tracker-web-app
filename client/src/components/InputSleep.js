@@ -12,7 +12,7 @@ const InputSleep = () => {
     e.preventDefault();
     try {
       const body = { time, date, user_id };
-      const response = fetch("http://localhost:5000/sleeps", {
+      const response = fetch("/api/sleeps", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),

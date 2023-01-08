@@ -3,7 +3,7 @@ import React from "react";
 const LogOut = () => {
   const SignOut = (e) => {
     e.preventDefault();
-    const str = `${process.env.REACT_APP_SERVER_URL}/auth/logout`;
+    const str = `/api/auth/logout`;
     window.open(str, "_self");
   };
 

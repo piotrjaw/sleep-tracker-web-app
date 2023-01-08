@@ -3,7 +3,7 @@ import React from "react";
 const SignIn = () => {
   const SignUp = (e) => {
     e.preventDefault();
-    const str = `${process.env.REACT_APP_SERVER_URL}/auth/google`;
+    const str = "/api/auth/google";
     window.open(str, "_self");
   };
 
